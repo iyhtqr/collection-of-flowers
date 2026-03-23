@@ -1,54 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Collection of flowers</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection of flowers :)</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <main class="page">
     <h1>Collection of flowers :)</h1>
-    <body>a dedicated place for holding the so-called "unaesthetic" flowers</body>
-    <body>precious enough to be recorded</body>
+    
+    <p class="subtitle">
+      a dedicated place for holding the so-called "unaesthetic" flowers
+      <br>
+      <span class="highlight">precious enough to be recorded</span>
+    </p>
 
     <section class="gallery" id="gallery">
       <div class="item">
-        <img src="docs/20260115_3.jpg" alt="20260115_3"/>
+        <img src="docs/20260115_3.jpg" alt="20260115_3" loading="lazy">
         <div class="label">2026-01-15</div>
       </div>
       
       <div class="item">
-        <img src="docs/20260115_2.jpg" alt="20260115_2"/>
+        <img src="docs/20260115_2.jpg" alt="20260115_2" loading="lazy">
         <div class="label">2026-01-15</div>
       </div>
       
       <div class="item">
-        <img src="docs/20260115_1.jpg" alt="20260115_1"/>
+        <img src="docs/20260115_1.jpg" alt="20260115_1" loading="lazy">
         <div class="label">2026-01-15</div>
       </div>
       
       <div class="item">
-        <img src="docs/20260107.jpg" alt="20260107"/>
+        <img src="docs/20260107.jpg" alt="20260107" loading="lazy">
         <div class="label">2026-01-07</div>
       </div>
 
       <div class="item">
-        <img src="docs/20251229_2.jpg" alt="20251229_2"/>
+        <img src="docs/20251229_2.jpg" alt="20251229_2" loading="lazy">
         <div class="label">2025-12-29</div>
       </div>
 
       <div class="item">
-        <img src="docs/20251229_1.jpg" alt="20251229_1"/>
+        <img src="docs/20251229_1.jpg" alt="20251229_1" loading="lazy">
         <div class="label">2025-12-29</div>
       </div>
-
     </section>
   </main>
 
   <div class="lightbox" id="lightbox" aria-hidden="true">
     <button class="close" id="closeBtn" aria-label="Close image">×</button>
-    <img id="lightboxImg" alt=""/>
+    <img id="lightboxImg" src="" alt="">
   </div>
 
   <script src="script.js"></script>
