@@ -37,7 +37,7 @@ h1 {
 .accent { color: var(--accent); }
 
 .subtitle {
-  font-size: clamp(1rem, 5vw, 1.5rem);
+  font-size: clamp(1.25rem, 5vw, 2rem);
   color: var(--text-muted);
   max-width: 600px;
 }
