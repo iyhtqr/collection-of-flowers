@@ -39,7 +39,7 @@ h1 {
 .subtitle {
   font-size: 1.1rem;
   color: var(--text-muted);
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .gallery {
