@@ -3,34 +3,30 @@ const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightboxImg');
 const closeBtn = document.getElementById('closeBtn');
 
-// Open Lightbox
 gallery.addEventListener('click', (e) => {
-  const clickedImg = e.target.closest('img');
-  if (!clickedImg) return;
-  
-  lightboxImg.src = clickedImg.src;
-  lightboxImg.alt = clickedImg.alt;
+  const img = e.target.closest('img');
+  if (!img) return;
+
+  lightboxImg.src = img.src;
   lightbox.classList.add('open');
-  lightbox.setAttribute('aria-hidden', 'false');
-  document.body.style.overflow = 'hidden'; // Stop scrolling background
+  document.body.style.overflow = 'hidden'; // Prevent scroll
 });
 
-// Close Lightbox function
-function closeLightbox() {
+const closeGallery = () => {
   lightbox.classList.remove('open');
-  lightbox.setAttribute('aria-hidden', 'true');
-  lightboxImg.src = '';
-  document.body.style.overflow = ''; // Restore scrolling
-}
+  document.body.style.overflow = ''; 
+};
 
-closeBtn.addEventListener('click', closeLightbox);
+closeBtn.addEventListener('click', closeGallery);
 
-// Close on background click
+// Close if user clicks the dark background
 lightbox.addEventListener('click', (e) => {
-  if (e.target === lightbox) closeLightbox();
+  if (e.target === lightbox || e.target.classList.contains('lightbox-content')) {
+    closeGallery();
+  }
 });
 
-// Close on Escape key
+// ESC key to close
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'Escape') closeGallery();
 });
