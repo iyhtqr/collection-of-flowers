@@ -15,21 +15,23 @@ body {
   padding: 32px 16px 48px;
 }
 
+.header-text {
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+
 h1 {
   margin-bottom: 24px;
   font-weight: 600;
-  text-align: left;
-  padding-left: 16px;
 }
 
 .subtitle {
-  text-align: left;
   font-style: italic;
   color: #94a3b8;
   margin-bottom: 64px;
   line-height: 1.6;
   font-size: 1.2em;
-  padding-left: 16px;
 }
 
 .highlight {
