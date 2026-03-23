@@ -19,6 +19,7 @@ h1 {
   margin-bottom: 24px;
   font-weight: 600;
   text-align: left;
+  padding-left: 16px;
 }
 
 .subtitle {
@@ -27,8 +28,8 @@ h1 {
   color: #94a3b8;
   margin-bottom: 64px;
   line-height: 1.6;
-  max-width: 600px;
   font-size: 1.2em;
+  padding-left: 16px;
 }
 
 .highlight {
