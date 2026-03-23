@@ -16,14 +16,34 @@ body {
 }
 
 h1 {
-  margin-bottom: 24px;
+  margin-bottom: 40px; /* Increased from 24px */
   font-weight: 600;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-style: italic;
+  color: #94a3b8;
+  margin-bottom: 64px; /* Extra margin for body text */
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2em;
+}
+
+.highlight {
+  display: block;
+  font-size: 1.1em;
+  opacity: 0.8;
+  margin-top: 8px;
 }
 
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
+  gap: 24px; /* Increased from 16px for more space between photos */
 }
 
 .item {
@@ -116,10 +136,16 @@ h1 {
 
   h1 {
     font-size: 1.4rem;
+    margin-bottom: 32px;
+  }
+
+  .subtitle {
+    margin-bottom: 48px;
+    font-size: 1.1em;
   }
 
   .gallery {
-    gap: 12px;
+    gap: 16px;
   }
 
   .gallery img {
